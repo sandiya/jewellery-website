@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+    border-right:1px solid #bbb;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+.navigation{
+height:50px;
+padding:2;
+word-spacing:100px;
+background:lightgreen;
+}
+.conten
+* {box-sizing:border-box}
+body {font-family: Verdana,sans-serif;}
+.mySlides {display:none}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 5px;
+  width:  5px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: initial;
+}
+
+  }
+#footer {
+	background:#000000;
+	text-color:#FFFFFF;
+	border-top:1px solid #f0e9eb;
+	padding:50px 5px;
+	clear:both;
+}
+</style>
+</head>
+<body background="home1.jpg">
+<h1 align="center">
+
+		<i><font size="100" face="Comic Sans MS" color="black"> SWORANNALAYAH </font><i><br>
+		<i><font  color="black">BRIDAL COLLECTION &nbsp  </font><i> 
+		
+		
+	</h1>
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="j1.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="j2.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="j3.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 5000); // Change image every 2 seconds
+}
+</script>
+<div>
+
+	<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="enquiry.html">Enquiry</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  
+</ul>
+<br>
+<br>
+<br>
+<img src="kunda.jpg" height="250" width="240">&nbsp&nbsp&nbsp
+<img src="ad.jpg" height="250" width="240">&nbsp&nbsp&nbsp
+<img src="antique.jpg" height="250" width="240">&nbsp&nbsp&nbsp
+<img src="te.jpg" height="250" width="240">&nbsp&nbsp&nbsp
+<img src="bangle.jpg" height="250" width="240">
+
+</div>
+
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <button type="submit" onclick="window.location.href='kundan.html'">KUNDAN JEWELLERY</button>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 
+	<button type="submit" onclick="window.location.href='ad.html'">AD JEWELLERY</button>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 
+	<button type="submit" onclick="window.location.href='antique.html'">ANTIQUE JEWELLERY</button>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 
+	<button type="submit" onclick="window.location.href='temple.html'">TEMPLE COLLECTION</button>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 
+	
+	<button type="submit" onclick="window.location.href='bangle.html'">BRIDAL BANGLES</button>
+	<br>
+	<br>
+	<footer id="footer">
+
+<i><font  color="white">© Copyright 2017, All Rights Reserved By Sworannalayah </font><i> 
+</footer>
+</body>
+</html> 
